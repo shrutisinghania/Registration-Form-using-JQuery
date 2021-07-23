@@ -1,0 +1,63 @@
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="css/style.css" />
+<!-- Include JS File Here -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/reservation.js"></script>
+
+<div class="container">
+  <div class="ct-section_header-description">
+    Reservation Form
+    <h2>An intutive booking form using jQuery UI.</h2>
+  </div>
+  <div class="clearfix">&nbsp;</div>
+  <div class="ct-section_header-separator">&nbsp;</div>
+  <div class="clearfix">&nbsp;</div>
+
+  <div class="main">
+    <form class="form" method="post" action="#">
+      <label for="guestname">Please Enter Your Name</label>
+      <input type="text" name="guestname" id="guestname" />
+
+      <label for="guestemail">Email Address</label>
+      <input type="text" name="guestemail" id="guestemail" />
+
+      <label for="guestelephone">Telephone / Mobile</label>
+      <input type="text" name="guestelephone" id="guestelephone" />
+
+      <label for="adults">Number of Adults</label>
+      <input type="text" id="adults" name="adults" />
+
+      <label for="children">Number of Children</label>
+      <input type="text" id="children" name="children" />
+
+      <label for="checkin">Check-in Date</label>
+      <input type="text" id="checkin" name="checkin" placeholder="mm/dd/yyyy" />
+
+      <label for="checkout">Check-out Date</label>
+      <input
+        type="text"
+        id="checkout"
+        name="checkout"
+        placeholder="mm/dd/yyyy"
+      />
+
+      <label>Please answer these questions for a pleasant stay</label>
+      <div>
+        <label class="switch">
+          <input type="checkbox" name="switch1" id="switch1" value="switch1" />
+          <span class="switch-label" data-on="YES" data-off="NO"></span>
+          <span>Will you be bringing a pet?</span>
+        </label>
+      </div>
+      <div>
+        <label class="switch">
+          <input type="checkbox" name="switch2" id="switch2" value="switch2" />
+          <span class="switch-label" data-on="YES" data-off="NO"></span>
+          <span>Do you need us to pick you up?</span>
+        </label>
+      </div>
+
+      <input type="button" name="register" id="register" value="Register" />
+    </form>
+  </div>
+</div>
